@@ -1,94 +1,106 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  .navbar {
-   margin-top: -2%;
-   margin-bottom: 0%;
-   padding: 0% !important;
-   height: 80% !important; 
-  }
-  h4 {
-    text-align: center;
-  }
-  .titulo {
-    text-align: center;
-    font-size: 1.2em;
-    color:blue;
-    height: 60%;
-  }
-  
-  .main {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  form {
-    text-align: center;
-    width: 60%;
-    background-color: lightskyblue;
-    padding: 20px;
-    color: #fff;
-    border-radius: 20px;
-    margin-bottom: 5%;
-  }
-  form input::placeholder {
-    width: 15em;
-    margin: 3px;
-    height: 2em;
-    color:white;
-  }
-  form .btn {
-    margin: 2em 1em;
-    width: 60%;
-    height: 40px;
-    text-transform: uppercase;
-    color: #fff;
-    letter-spacing: 2px;
-    border-radius: 20px;
-    border: none;
-    cursor: pointer;
-  }
-  .container-data {
-    display: flex;
-    justify-content: space-around;
-    margin-top: -1em;
-  }
-  
-  .container-data h6 {
-    text-align: center;
-  }
-  .puntounid {
-    margin-top: 5%;
-    background-color: orange;
-    color: white;
-  }
-  .puntovtam {
-    margin-top: 5%;
-    background-color: navy;
-    color: white;
-  }
-  .puntovtaa {
-    margin-top: 5%;
-    background-color:green;
-    color: white;
-  }
-  .img1 {
-    margin-left: 30%;
-    width: 500px; height: 400px;
-          }
-          
-  .marca {
-    margin-left: 42%;
-    color: red;
-    font-size: 1.5em;
-          }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h4 {
+  text-align: center;
+}
+.titulo {
+  text-align: center;
+  font-size: 1.2em;
+  color:blue;
+  height: 60%;
+}
 
-  .rubro {
-    margin-left: 42%;
-    color: red;
-    font-size: 1.5em;
-                  }
+.main {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form {
+  text-align: center;
+  width: 60%;
+  background-color: lightskyblue;
+  padding: 20px;
+  color: #fff;
+  border-radius: 20px;
+  margin-bottom: 5%;
+}
+form input::placeholder {
+  width: 18em;
+  margin: 3px;
+  height: 1.8em;
+  color:white;
+}
+form .btn {
+  margin: 2em 1em;
+  width: 60%;
+  height: 40px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 2px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+.container-data {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -1em;
+}
+
+.container-data h6 {
+  text-align: center;
+}
+.puntounid {
+  margin-top: 5%;
+  background-color: orange;
+  color: white;
+}
+.puntovtam {
+  margin-top: 5%;
+  background-color: navy;
+  color: white;
+}
+.puntovtaa {
+  margin-top: 5%;
+  background-color:green;
+  color: white;
+}
+.img1 {
+  margin-left: 30%;
+  width: 500px; height: 400px;
+        }
+        
+.marca {
+  margin-left: 42%;
+  color: navy;
+  font-size: 1.5em;
+        }
+        .costof {
+          margin-left: 42%;
+          color: red;
+          font-size: 1.3em;
+                }
+                
+        .costov {
+          margin-left: 42%;
+          color: orange;
+          font-size: 1.3em;
+                }
+      
+.rubro {
+  margin-left: 42%;
+  color: red;
+  font-size: 1.5em;
+                }
+                
+.selec {
+  margin-left: 12%;
+  color: red;
+  font-size: 1.5em;
+                }
+                

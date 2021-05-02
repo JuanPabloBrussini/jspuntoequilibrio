@@ -19,6 +19,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
   </head>
   <!-- SEO-->
 
@@ -44,35 +45,34 @@
       <link rel="shortcut icon" href="multimedia/bitpointlogo2.png" type="image/x-icon">
         </head>
   <body>
-    <!--header-->
-    <header>
-        <nav class="navbar red z-depth-4">
-        <h4>Punto de Equilibrio Pymes</h4>
-      </nav>    
-    </header>
-    <!--Titulo Formulario-->
+       <!--Titulo Formulario-->
 
-    <div>
+    <div class="">
+      <h4>Punto de Equilibrio Pymes</h4>
     <h6 class="titulo">Ingrese los datos solictados</h6>
   </div>
   
     <!--Formulario-->
-
-    <div class="main">
-      <form id="formEqui">
-        <input id="marca"  type="text" placeholder="Marca" required="">
-        <input id="rubro"  type="text" placeholder="Rubro" required="">
-        <input id="alquileres"  type="number" placeholder="Alquileres" required="">
-        <input id="servicio" type="number" placeholder="Servicios" required="">
-        <input id="sueldo" type="number" placeholder="SueldosBrutos" required="">
-        <input id="honorariosPro" type="number" placeholder="Honorarios Profesionales" required="">
-        <input id="honorariosGe" type="number" placeholder="Honorarios Gerenciales" required="">
+    
+        <div class="main">
+        <form class="form" id="formEqui">
+        <input id="marca"  type="text" placeholder="Marca / Negocio" required="">
+        <select id="rubros" class="form-select" aria-label="Default select example" required="">
+          <option selected>Modalidad de Venta</option >
+          <option value="minorista">Minorista</option>
+          <option value="mayorista">Fabricante o Mayorista</option>
+          </select>
+        <input id="alquileres"  type="number" placeholder="Alquileres Mensuales" required="">
+        <input id="servicio" type="number" placeholder="Servicios Mes" required="">
+        <input id="sueldo" type="number" placeholder="Sueldos Brutos Mes" required="">
+        <input id="honorariosPro" type="number" placeholder="Honorarios Profesionales Mensualizados" required="">
+        <input id="honorariosGe" type="number" placeholder="Honorarios Gerenciales Mensuales" required="">
         <input id="preciovent" type="number" placeholder="Precio de Venta Promedio" required="">
-        <input id="comisione" type="number" placeholder="Comisiones" required="">
+        <input id="comisione" type="number" placeholder="Comisiones por Venta" required="">
 
         <input type="submit" value="Calcular" class="btn red z-depth-4" />
-      
       </form>
+
     </div>
 
     <!--Resultado Simulador-->
@@ -85,7 +85,7 @@
         <div class="result" id="result"></div>
       </div>
     </div>
-
+    
 
     <script src="js/funciones.js"></script>
           
