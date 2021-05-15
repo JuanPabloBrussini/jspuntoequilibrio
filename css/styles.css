@@ -57,16 +57,22 @@ form .btn {
 }
 .puntounid {
   margin-top: 5%;
+  height: 40px;
+  text-align: center;
   background-color: orange;
   color: white;
 }
 .puntovtam {
   margin-top: 5%;
+  height: 40px;
+  text-align: center;
   background-color: navy;
   color: white;
 }
 .puntovtaa {
   margin-top: 5%;
+  height: 40px;
+  text-align: center;
   background-color:green;
   color: white;
 }
@@ -103,4 +109,19 @@ form .btn {
   color: red;
   font-size: 1.5em;
                 }
-                
+        
+.btn1 {
+  margin: 0;
+  width: 10%;
+  height: 40px;
+  position: relative;
+ top: 50%;
+  left: 40%;
+  text-transform: uppercase;
+  color:white;
+  background-color: red;
+  letter-spacing: 2px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}

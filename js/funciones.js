@@ -1,5 +1,13 @@
+console.log('ok')
+//comprobando que Jquery esta enlazado
+$( document ).ready(function() 
+{
+   console.log( "El DOM esta listo" );
+});
+
+
 //Activar el formulario
-let formEqui = document.getElementById('formEqui') 
+let formEqui = document.getElementById('formEqui');
 formEqui = addEventListener('submit', pointEq)
 
 
@@ -13,7 +21,7 @@ let sueldos = document.getElementById('sueldo').value;
 let honorariosProf = document.getElementById('honorariosPro').value;
 let honorariosGer = document.getElementById('honorariosGe').value;
 let precioVenta = document.getElementById('preciovent').value; 
-let comisiones = document.getElementById('comisione').value;
+let comisiones = document.getElementById('comisiones').value;
 let percent = 100;
   
 
@@ -190,12 +198,32 @@ print.innerHTML = `
 
 <img src="multimedia/puntodeeq.jpg" class="img1" alt="punto de equilibrio">
 
+
 </div>
 </section>
 
 `  
+
   result.appendChild(print)
-  reset();
+  result.scrollIntoView({block: "end"});
+  reset()
+
+  //Creacion de boton de mas informacion
+  $("#containerd").append('<button id="btn1" class="btn1">+Info</button>');
+  $("#btn1").click(function () { 
+
+        swal({
+      title: "Contactanos",
+      text: "info@bitpointconsulting.com",
+      
+    }); 
+   });
+  
+
+   //scrollear hasta el final de la pantalla
+   containerd.scrollIntoView({block: "end"});
+   reset()
+
 
 }
 
@@ -203,3 +231,14 @@ print.innerHTML = `
 function reset() {
 document.getElementById('formEqui').reset()  
 } 
+
+//Alerta para mostrar cual debe ser el valor a ingresar en el formulario
+$("#comisiones").change((e) => { 
+  swal({
+    title: "Porcentaje!",
+    text: "El valor es entre 0 y 100",
+
+  });
+});
+
+
