@@ -6,8 +6,12 @@
 .body {
   background-color: white;
 }
+.banner {
+  background-color: rgb(240, 128, 128);
+}
 h4 {
   text-align: center;
+  color:blue;
 }
 .titulo {
   text-align: center;
