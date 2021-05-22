@@ -5,6 +5,7 @@ $( document ).ready(function()
    console.log( "El DOM esta listo" );
 });
 
+$("h6").fadeOut(2000); 
 
 //Activar el formulario
 let formEqui = document.getElementById('formEqui');
@@ -218,8 +219,9 @@ print.innerHTML = `
       
     }); 
    });
-  
 
+   
+   
    //scrollear hasta el final de la pantalla
    containerd.scrollIntoView({block: "end"});
    reset()
@@ -240,5 +242,3 @@ $("#comisiones").change((e) => {
 
   });
 });
-
-

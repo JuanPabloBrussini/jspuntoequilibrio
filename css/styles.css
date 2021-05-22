@@ -136,3 +136,9 @@ form .btn {
   border: none;
 
 }
+.members{
+position: relative;
+left: 20%;  
+height: 80%;
+width: 70%;
+}
