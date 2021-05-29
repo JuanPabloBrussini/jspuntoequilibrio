@@ -72,40 +72,40 @@
           <div class="input-group mb-3">
             <span class="input-group-text">$</span>
             <span class="input-group-text">0.00</span>
-            <input  id="alquileres"  type="number" class="form-control" placeholder="Alquileres Mensuales" aria-label="Dollar amount (with dot and two decimal places)" required="">
+            <input  id="alquileres"  type="number" min="0" pattern="^[0-100000000000000]+" class="form-control" placeholder="Alquileres Mensuales" aria-label="Dollar amount (with dot and two decimal places)" required="">
           </div>
 
           <div class="input-group mb-3">
             <span class="input-group-text">$</span>
             <span class="input-group-text">0.00</span>
-            <input  id="servicio"  type="number" class="form-control" placeholder="Servicios Mes" aria-label="Dollar amount (with dot and two decimal places)" required="">
+            <input  id="servicio"  type="number" min="0" pattern="^[0-100000000000000]+" class="form-control" placeholder="Servicios Mes" aria-label="Dollar amount (with dot and two decimal places)" required="">
           </div>
           <div class="input-group mb-3">
             <span class="input-group-text">$</span>
             <span class="input-group-text">0.00</span>
-            <input  id="sueldo"  type="number" class="form-control" placeholder="Sueldos Brutos Mes" aria-label="Dollar amount (with dot and two decimal places)" required="">
+            <input  id="sueldo"  type="number" min="0" pattern="^[0-100000000000000]+" class="form-control" placeholder="Sueldos Brutos Mes" aria-label="Dollar amount (with dot and two decimal places)" required="">
           </div>
           <div class="input-group mb-3">
             <span class="input-group-text">$</span>
             <span class="input-group-text">0.00</span>
-            <input  id="honorariosPro"  type="number" class="form-control" placeholder="Honorarios Profesionales Mensualizados" aria-label="Dollar amount (with dot and two decimal places)" required="">
+            <input  id="honorariosPro"  type="number" min="0" pattern="^[0-100000000000000]+" class="form-control" placeholder="Honorarios Profesionales Mensualizados" aria-label="Dollar amount (with dot and two decimal places)" required="">
           </div>
           <div class="input-group mb-3">
             <span class="input-group-text">$</span>
             <span class="input-group-text">0.00</span>
-            <input  id="honorariosGe"  type="number" class="form-control" placeholder="Honorarios Gerenciales Mensualizados" aria-label="Dollar amount (with dot and two decimal places)" required="">
+            <input  id="honorariosGe"  type="number" min="0" pattern="^[0-100000000000000]+" class="form-control" placeholder="Honorarios Gerenciales Mensualizados" aria-label="Dollar amount (with dot and two decimal places)" required="">
           </div>
           <div class="input-group mb-3">
             <span class="input-group-text">$</span>
             <span class="input-group-text">0.00</span>
-            <input  id="preciovent"  type="number" class="form-control" placeholder="Precio de Venta Promedio" aria-label="Dollar amount (with dot and two decimal places)" required="">
+            <input  id="preciovent"  type="number" min="0" pattern="^[0-100000000000000]+"  class="form-control" placeholder="Precio de Venta Promedio" aria-label="Dollar amount (with dot and two decimal places)" required="">
           </div>
           <div class="input-group mb-3">
             <span class="input-group-text">%</span>
             <span class="input-group-text">0.00</span>
-            <input  id="comisiones"  type="number" class="form-control" placeholder="Comisiones por Venta" aria-label="Dollar amount (with dot and two decimal places)" required="">
+            <input  id="comisiones"  type="number" min="0" max="100" pattern="^[0-100]+" class="form-control" placeholder="Comisiones por Venta" aria-label="Dollar amount (with dot and two decimal places)" required="">
           </div>
-
+        
         <button id="btn2" type="submit" class="btn btn-danger" value="Calcular" class="btn red z-depth-4" >Calcular</button>
         
       </form>

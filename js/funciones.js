@@ -24,13 +24,22 @@ let honorariosGer = document.getElementById('honorariosGe').value;
 let precioVenta = document.getElementById('preciovent').value; 
 let comisiones = document.getElementById('comisiones').value;
 let percent = 100;
-  
+//let margenbruto = document.getElementById('margenbruto').value;
+
+//obtencion de coeficiente
+//let cmv2 = equi(precioVenta, margenbruto );
+//let coeficiente = 1 + margenbruto / 100
+ 
+//function  equi(precioVenta, coeficiente) {
+ //return precioVenta / coeficiente
+ //}
 
 
-return {marcas, alquiler, servicios, sueldos, honorariosProf, honorariosGer, precioVenta, comisiones, percent}
+
+return {marcas, alquiler, servicios, sueldos, honorariosProf, honorariosGer, precioVenta, comisiones, percent }
 
 }
-
+//console.log(coeficiente)
 
 //funcion para calcular el punto de equilibrio
 
@@ -73,6 +82,7 @@ function mas (precioVenta, cmv, comisiones, iibb, gcias, gsadm, gsvs ) {
       return costosFijos / margenUnitario
     
       }
+
       //obtencion de punto de Equilibrio Unitario mensual
       let puntoEqUni = parseInt (equi(costosFijos, margenUnitario ));
   
@@ -235,10 +245,10 @@ document.getElementById('formEqui').reset()
 } 
 
 //Alerta para mostrar cual debe ser el valor a ingresar en el formulario
-$("#comisiones").change((e) => { 
-  swal({
-    title: "Porcentaje!",
-    text: "El valor es entre 0 y 100",
+//$("#comisiones").change((e) => { 
+  //swal({
+    //title: "Porcentaje!",
+    //text: "El valor es entre 0 y 100",
 
-  });
-});
+  //});
+//});
